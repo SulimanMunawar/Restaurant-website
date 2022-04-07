@@ -1,0 +1,99 @@
+<app-main-menu></app-main-menu>
+<div class="containter-fluid">
+    <div class="row gx-0">
+        <div class="col-md-2">
+            <aside>
+                <div class="sidebar-container">
+                    <div class="profile-section">
+                        <div class="user-profile">
+                            <img src="../../assets/img/stuff-img-03.jpg" alt="">
+                        </div>
+                        <div class="user-detail">
+                            <h4>Suliman Munawar Khan</h4>
+                            <p>Islamabad</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li routerLink="/dashboard" routerLinkActive="active"> <img src="../../assets/img/icons/my-profile.svg" alt=""> My Profile</li>
+                            <li routerLink="/payment" routerLinkActive="active"> <img src="../../assets/img/icons/payment.svg" alt=""> Payment</li>
+                            <li routerLink="/dietary" routerLinkActive="active"> <img src="../../assets/img/icons/dietry.svg" alt=""> Dietary</li>
+                            <li routerLink="/allergens" routerLinkActive="active"> <img src="../../assets/img/icons/allergence.svg" alt=""> Allergens</li>
+                            <li routerLink="/settings" routerLinkActive="active"> <img src="../../assets/img/icons/setting.svg" alt=""> Settings</li>
+                            <li routerLink="/privacy" routerLinkActive="active"> <img src="../../assets/img/icons/privacy.svg" alt=""> Privacy</li>
+                            <li routerLink="/help" routerLinkActive="active"> <img src="../../assets/img/icons/Help.svg" alt=""> Help</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-10">
+            <div class="content">
+                <div class="left-side-container">
+                    <div class="my-profile-card">
+                        <div class="heading">
+                            <img src="../../assets/img/icons/setting.svg" alt="" id="loading">
+                            <h3>Settings</h3>
+                        </div>
+                        <div class="edit-profile">
+                            <h3>Edit Profile</h3>
+                            <div class="profile-container">
+                                <div class="profile-pic">
+                                    <label class="-label" for="file">
+                                      <span class="glyphicon glyphicon-camera"></span>
+                                      <span>Change Image</span>
+                                    </label>
+                                    <input id="file" type="file" onchange="loadFile(event)" />
+                                    <img src={{imageURL}} id="output" width="200" />
+                                </div>
+                                <div class="profile-form">
+                                    <form action="">
+                                        <div class="user-name">
+                                            <input type="text" id="username" name="username" placeholder="John Doe">
+                                        </div>
+                                        <div class="user-email">
+                                            <input type="email" id="email" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="user-phone">
+                                            <input type="tel" id="phone" name="phone" placeholder="Phone">
+                                        </div>
+                                        <div class="user-address">
+                                            <input type="text" id="address" name="address" placeholder="Address">
+                                        </div>
+                                        <div class="user-save-btn">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-profile-card">
+                        <div class="edit-profile">
+                            <h3>Change Password</h3>
+                            <div class="profile-container">
+                                <div class="profile-form">
+                                    <form action="">
+                                        <div class="user-name">
+                                            <input type="password" id="password" name="password" placeholder="Old Password">
+                                        </div>
+                                        <div class="user-email">
+                                            <input type="password" id="Npassword" name="Npassword" placeholder="New Password">
+                                        </div>
+                                        <div class="user-phone">
+                                            <input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="user-save-btn">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

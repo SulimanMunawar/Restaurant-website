@@ -1,0 +1,22 @@
+$footer-color: #00A9EC;
+$text-color: #FFFFFF;
+.footer-blue {
+    background: $footer-color;
+    // position: relative;
+    // bottom: 0;
+    // width: 100%;
+}
+
+.heading {
+    padding: 0.6rem 0.6rem;
+    h3 {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: $text-color;
+    }
+    p {
+        color: $text-color;
+    }
+}

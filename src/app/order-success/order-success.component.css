@@ -1,0 +1,305 @@
+.product.style-2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: -5px;
+}
+
+.product.style-2 .section-header {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.product.style-2 .section-header .header-img {
+    margin: 10px 0 15px;
+}
+
+.product.style-2 .section-header>span {
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    color: #d60231;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search .searchTerm {
+    width: 100%;
+    border: 2px solid #00a9ec;
+    border-right: none;
+    padding: 5px;
+    height: 46px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
+}
+
+.search .searchTerm:focus {
+    color: #00a9ec;
+}
+
+.search .searchButton {
+    width: 40px;
+    height: 46px;
+    border: 1px solid #00a9ec;
+    background: #00a9ec;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.members-card {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    background: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 169, 236, 0.1);
+    border-radius: 30px;
+}
+
+.members-card .users-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.members-card .user-img {
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.plus-minus {
+    --primary: #ffd02e;
+    --secondary: #fafbff;
+    --duration: 0.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 240px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 4px solid var(--primary);
+    background-size: 300% 300%;
+    transition: transform 0.3s;
+    transform: scale(var(--scale, 1)) translateZ(0);
+    -webkit-animation: var(--name, unchecked) var(--duration) ease forwards;
+    animation: var(--name, unchecked) var(--duration) ease forwards;
+}
+
+.plus-minus:before,
+.plus-minus:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: var(--height, 16px);
+    left: 6px;
+    top: var(--top, 6px);
+    background: var(--background, var(--primary));
+    -webkit-animation: var(--name-icon-b, var(--name-icon, unchecked-icon)) var(--duration) ease forwards;
+    animation: var(--name-icon-b, var(--name-icon, unchecked-icon)) var(--duration) ease forwards;
+}
+
+.plus-minus:before {
+    -webkit-clip-path: polygon(0 6px, 6px 6px, 6px 0, 10px 0, 10px 6px, 16px 6px, 16px 10px, 10px 10px, 10px 16px, 6px 16px, 6px 10px, 0 10px);
+    clip-path: polygon(0 6px, 6px 6px, 6px 0, 10px 0, 10px 6px, 16px 6px, 16px 10px, 10px 10px, 10px 16px, 6px 16px, 6px 10px, 0 10px);
+}
+
+.plus-minus:after {
+    --height: 4px;
+    --top: 12px;
+    --background: var(--secondary);
+    --name-icon-b: var(--name-icon-a, checked-icon);
+}
+
+.plus-minus:active {
+    --scale: 0.95;
+}
+
+.plus-minus:checked {
+    --name: checked;
+    --name-icon-b: checked-icon;
+    --name-icon-a: unchecked-icon;
+}
+
+@-webkit-keyframes checked-icon {
+    from {
+        transform: translateZ(12px);
+    }
+    to {
+        transform: translateX(16px) rotateY(90deg) translateZ(12px);
+    }
+}
+
+@keyframes checked-icon {
+    from {
+        transform: translateZ(12px);
+    }
+    to {
+        transform: translateX(16px) rotateY(90deg) translateZ(12px);
+    }
+}
+
+@-webkit-keyframes unchecked-icon {
+    from {
+        transform: translateX(-16px) rotateY(-90deg) translateZ(12px);
+    }
+    to {
+        transform: translateZ(12px);
+    }
+}
+
+@keyframes unchecked-icon {
+    from {
+        transform: translateX(-16px) rotateY(-90deg) translateZ(12px);
+    }
+    to {
+        transform: translateZ(12px);
+    }
+}
+
+@-webkit-keyframes checked {
+    from {
+        background-image: radial-gradient(ellipse at center, var(--primary) 0%, var(--primary) 25%, var(--secondary) 25.1%, var(--secondary) 100%);
+        background-position: 100% 50%;
+    }
+    to {
+        background-image: radial-gradient(ellipse at center, var(--primary) 0%, var(--primary) 25%, var(--secondary) 25.1%, var(--secondary) 100%);
+        background-position: 50% 50%;
+    }
+}
+
+@keyframes checked {
+    from {
+        background-image: radial-gradient(ellipse at center, var(--primary) 0%, var(--primary) 25%, var(--secondary) 25.1%, var(--secondary) 100%);
+        background-position: 100% 50%;
+    }
+    to {
+        background-image: radial-gradient(ellipse at center, var(--primary) 0%, var(--primary) 25%, var(--secondary) 25.1%, var(--secondary) 100%);
+        background-position: 50% 50%;
+    }
+}
+
+@-webkit-keyframes unchecked {
+    from {
+        background-image: radial-gradient(ellipse at center, var(--secondary) 0%, var(--secondary) 25%, var(--primary) 25.1%, var(--primary) 100%);
+        background-position: 100% 50%;
+    }
+    to {
+        background-image: radial-gradient(ellipse at center, var(--secondary) 0%, var(--secondary) 25%, var(--primary) 25.1%, var(--primary) 100%);
+        background-position: 50% 50%;
+    }
+}
+
+@keyframes unchecked {
+    from {
+        background-image: radial-gradient(ellipse at center, var(--secondary) 0%, var(--secondary) 25%, var(--primary) 25.1%, var(--primary) 100%);
+        background-position: 100% 50%;
+    }
+    to {
+        background-image: radial-gradient(ellipse at center, var(--secondary) 0%, var(--secondary) 25%, var(--primary) 25.1%, var(--primary) 100%);
+        background-position: 50% 50%;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: "Roboto", Arial;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafbff;
+}
+
+.btnContact {
+    width: 40%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1.5%;
+    background: #00a9ec;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+@media (min-width: 1200px) {
+    .btnContact {
+        width: 100%;
+        height: 55px;
+    }
+}
+
+@media (min-width: 390px) {
+    .section-header {
+        margin-bottom: 50px;
+        margin-top: -10px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    .product-item.style-2 {
+        text-align: left;
+    }
+    .product-item.style-2 .product-thumb {
+        margin-bottom: 0;
+        margin-left: 0;
+        position: relative;
+    }
+    .product-item.style-2 .product-content {
+        width: 95%;
+        padding: 0 10px 0 0;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .family-member-box {
+        width: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .btnContact {
+        width: 100%;
+        height: 55px;
+    }
+}
+
+
+/*# sourceMappingURL=order-success.component.css.map */

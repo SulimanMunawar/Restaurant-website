@@ -1,0 +1,54 @@
+<section class="product style-2 padding-tb" style="background-image:
+    url(../../assets/img/menu/product-2.jpg)">
+    <div class="container">
+        <div class="section-header">
+            <img src="../../assets/img/menu/sc-img.png" alt="sc-img" class="header-img" />
+            <h2>Restaurant Name</h2>
+            <span>Our Tasty Menu Today</span>
+        </div>
+
+        <div class="bookingSlot">
+            <div class="contact-form">
+                <form [formGroup]="form" (ngSubmit)="submitForm()">
+                    <h3>Choose Date and Time for Booking</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="appt">Start At</label>
+                                <input type="time" name="startTime" class="form-control" placeholder="Your Name
+                                    *" formControlName="startTime" />
+                                <div class="invalid-feedback">start time is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="appt">End At</label>
+                                <input type="time" name="endTime" class="form-control" placeholder="Your Name
+                                    *" formControlName="endTime" />
+                                <div class="invalid-feedback">End time is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="appt">On</label>
+                            <div class="form-group">
+                                <input type="date" name="date" class="form-control" placeholder="" value="" required name="onDate" formControlName="onDate" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- (click)="confirmBooking()" When Button Clicked form must be filled and confirmed from user -->
+                            <button class="btnContact" type="submit" (click)="submitForm()" [routerLink]="['/payment-method']" routerLinkActive="router-link-active">
+                                Book A Slot
+                            </button>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+<app-footer></app-footer>

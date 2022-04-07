@@ -1,0 +1,217 @@
+/* FONTS */
+
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44821');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817');
+
+/* COLORS */
+
+$yellow-color: #FFD02E;
+$gray-color: #404040;
+$blue-color:#00A9EC;
+
+/* SCSS */
+
+.sidebar-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgb(0 0 0 / 3%);
+    height: 100vh;
+    .profile-section {
+        padding-bottom: 1.5rem;
+        .user-profile {
+            max-width: 100%;
+            text-align: center;
+            padding-top: 2rem;
+            img {
+                width: 50%;
+                border-radius: 50%;
+            }
+        }
+        .user-detail {
+            text-align: center;
+            h4 {
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                color: $gray-color;
+                margin: 0;
+            }
+            p {
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            border-top: 0.1rem solid #E0E0E0;
+            width: 19.8rem;
+        }
+    }
+    .sidebar-menu {
+        padding: 1rem;
+        ul {
+            .active {
+                color: $yellow-color;
+            }
+            li {
+                margin: 1.5rem;
+                cursor: pointer;
+                &:hover {
+                    color: $yellow-color;
+                }
+                img {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin object-center {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+$circleSize: 165px;
+$radius: 100px;
+$shadow: 0 0 10px 0 rgba(255,
+255,
+255,
+.35);
+$fontColor: rgb(250,
+250,
+250);
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.content {
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    .left-side-container {
+        display: flex;
+        flex-direction: column;
+        .my-profile-card {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 25px rgb(0 0 0 / 3%);
+            border-radius: 8px;
+            width: 1060px;
+            height: auto;
+            margin: 0.5rem 0;
+            .heading {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                flex-wrap: wrap;
+                h3 {
+                    margin: 0;
+                    padding-left: 1rem;
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: $gray-color;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    border-top: 0.1rem solid #E0E0E0;
+                    width: 57rem;
+                }
+                #loading {
+                    animation: rotation 7s infinite linear;
+                }
+            }
+            .edit-profile {
+                h3 {
+                    padding: 0.5rem 2rem;
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .profile-container {
+                    padding: 1rem 2rem;
+                    padding: 1rem 2rem;
+                    display: flex;
+                    align-items: center;
+                    .profile-pic {
+                        color: transparent;
+                        transition: all .3s ease;
+                        @include object-center;
+                        position: relative;
+                        transition: all .3s ease;
+                        flex: 1;
+                        input {
+                            display: none;
+                        }
+                        img {
+                            position: absolute;
+                            object-fit: cover;
+                            width: $circleSize;
+                            height: $circleSize;
+                            box-shadow: $shadow;
+                            border-radius: $radius;
+                            z-index: 0;
+                        }
+                        .-label {
+                            cursor: pointer;
+                            height: $circleSize;
+                            width: $circleSize;
+                        }
+                        &:hover {
+                            .-label {
+                                @include object-center;
+                                background-color: rgba(0, 0, 0, .8);
+                                z-index: 10000;
+                                color: $fontColor;
+                                transition: background-color .2s ease-in-out;
+                                border-radius: $radius;
+                                margin-bottom: 0;
+                            }
+                        }
+                        span {
+                            display: inline-flex;
+                            padding: 0.2rem 0.6rem;
+                            height: 2em;
+                        }
+                    }
+                    .profile-form {
+                        input {
+                            background: #FFFFFF;
+                            border: 1px solid rgba(0, 169, 236, 0.44);
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            width: 480px;
+                            height: 40px;
+                            padding-left: 0.5rem;
+                            margin: 0.5rem;
+                            outline: none;
+                        }
+                        .user-save-btn {
+                            text-align: end;
+                            margin-right: 0.5rem;
+                            button {
+                                padding: 0.5rem 4rem;
+                                border: 0;
+                                color: white;
+                                border-radius: 5px;
+                                background: $yellow-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

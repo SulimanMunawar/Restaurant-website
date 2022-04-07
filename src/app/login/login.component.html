@@ -1,0 +1,47 @@
+<app-main-menu></app-main-menu>
+<section>
+    <div class="login-wrapper">
+        <div class="heading">
+            <h1>Login</h1>
+            <p>Login to your existant account of Easy Eat Out</p>
+        </div>
+        <div class="login-form">
+            <form action="">
+                <div class="form-control">
+                    <input type="email" name="email" id="email" placeholder="John@example.com">
+                </div>
+                <div class="form-control">
+                    <input type="password" name="password" id="password" placeholder="************">
+                </div>
+                <div class="form-rememberMe">
+                    <input type="checkbox" name="cb" id="remember">
+                    <label for="remember">remember me</label>
+                </div>
+                <div class="form-control">
+                    <button class="btn-login">Login</button>
+                </div>
+                <div class="form-forgot_password">
+                    <a routerLink="/forgot-password">forgot password</a>
+                </div>
+            </form>
+        </div>
+        <div class="OR-section">
+            <p class="or">OR</p>
+        </div>
+        <div class="social-login">
+            <button class="fb"> 
+                <span class="img-icon" ><img src="../../assets/img/icons/fb-icon.svg" alt=""></span> Facebook
+            </button>
+            <button class="google">
+                <span class="img-icon"><img src="../../assets/img/icons/google-icon.svg" alt=""></span>Google
+            </button>
+            <button class="apple">
+                <span class="img-icon"><img src="../../assets/img/icons/apple-icon.svg" alt=""></span>Apple
+            </button>
+        </div>
+        <div class="need">
+            <p>Need an Account? <a routerLink="/signup">Register</a> </p>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

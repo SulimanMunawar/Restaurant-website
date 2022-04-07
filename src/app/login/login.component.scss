@@ -1,0 +1,225 @@
+@import url('http://fonts.cdnfonts.com/css/hunters');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44821');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817');
+
+/* Colors used in website */
+
+$fb-btn: #4267B2;
+$google-btn: #DB4437;
+$apple-btn: #000000;
+$blue-color: #00A9EC;
+$yellow-color: #FFD02E;
+$gray-color: #7B7B7B;
+
+/*  */
+
+.login-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    margin: 1rem 5rem;
+    padding: 1rem;
+    text-align: center;
+    .heading {
+        h1 {
+            font-family: 'Hunters';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 144px;
+            color: $blue-color;
+        }
+        p {
+            font-family: 'Proxima Nova';
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+    .login-form {
+        display: flex;
+        justify-content: center;
+        .form-control {
+            width: 550px;
+            border: 0;
+            height: 60px;
+            padding: 0rem 0rem 4rem 0;
+            text-align: start;
+            input[type="email"],
+            input[type="password"] {
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 169, 236, 0.44);
+                box-sizing: border-box;
+                border-radius: 8px;
+                width: 100%;
+                height: 45px;
+                padding-left: 12px;
+                outline: none;
+                &:focus {
+                    border: 2px solid rgba(0, 169, 236, 0.87);
+                }
+            }
+            .btn-login {
+                width: 100%;
+                border: 0;
+                border-radius: 8px;
+                background: $yellow-color;
+                height: 40px;
+                color: white;
+                transition: 0.5s ease-in-out;
+                // &:hover {
+                //     background: #fac8134b;
+                // }
+            }
+        }
+        .form-rememberMe {
+            text-align: start;
+            margin-top: -13px;
+            margin-bottom: 35px;
+            /* Basic styles */
+            input[type="checkbox"] {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+            }
+            label {
+                position: relative;
+                display: inline-block;
+                line-height: 1.5em;
+                padding: 0 0 0 2em;
+                cursor: pointer;
+            }
+            label::before,
+            label::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+            }
+            label::before {
+                content: " ";
+                border: 2px solid $blue-color;
+                border-radius: 20%;
+            }
+            /* Checkbox */
+            input[type="checkbox"]+label::after {
+                content: "\2714";
+                color: $blue-color;
+                line-height: 1.5;
+                text-align: center;
+            }
+            /* :checked */
+            input[type="checkbox"]:checked+label::before {
+                background: #fff;
+                border-color: $blue-color;
+            }
+            input[type="checkbox"]+label::after {
+                -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+            input[type="checkbox"]:checked+label::after {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+            /* Transition */
+            label::before,
+            label::after {
+                -webkit-transition: .25s all ease;
+                -o-transition: .25s all ease;
+                transition: .25s all ease;
+            }
+        }
+        .form-forgot_password {
+            text-align: end;
+            margin-top: -24px;
+            margin-bottom: 35px;
+        }
+    }
+    .OR-section {
+        p {
+            color: #E5E5E5;
+            &::before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                background: #E5E5E5;
+                width: 255px;
+                height: 1px;
+                bottom: 6px;
+                right: 10px;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                position: relative;
+                background: #E5E5E5;
+                width: 255px;
+                height: 1px;
+                bottom: 6px;
+                left: 10px;
+            }
+        }
+    }
+    .social-login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        .fb {
+            border: 0;
+            background: $fb-btn;
+            box-shadow: 0px 2px 30px rgb(66 103 178 / 30%);
+            border-radius: 25px;
+            color: white;
+            width: 10%;
+            padding: 0.8rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            span {
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .google {
+            border: 0;
+            background: $google-btn;
+            box-shadow: 0px 2px 30px rgba(219, 68, 55, 0.3);
+            border-radius: 25px;
+            color: white;
+            width: 10%;
+            padding: 0.8rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            span {
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .apple {
+            border: 0;
+            background: $apple-btn;
+            box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 25px;
+            color: white;
+            width: 10%;
+            padding: 0.8rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            span {
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    .need {
+        padding-top: 1.5rem;
+    }
+}

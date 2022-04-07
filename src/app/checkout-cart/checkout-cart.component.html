@@ -1,0 +1,159 @@
+<app-main-menu></app-main-menu>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pay-bill">
+                    <h3>Select how to Pay Bill</h3>
+                    <div class="booking-details">
+                        <div class="slot-booking">
+                            <p>Slot Booking</p>
+                        </div>
+                        <div class="persons">
+                            <p>03</p>
+                        </div>
+                        <div class="date">
+                            <img src="../../assets/img/icons/date-range.svg" alt="">
+                            <p>10 / 10 /2022</p>
+                        </div>
+                        <div class="time">
+                            <img src="../../assets/img/icons/time-range.svg" alt="">
+                            <p>07:30 - 08:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-2">
+                        <div class="slot-booking">
+                            <p>How to Pay Bill</p>
+                        </div>
+                        <div class="persons ">
+                            <p>I am Ordering and paying</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-2">
+                        <div class="slot-booking">
+                            <p>Invited Friends</p>
+                        </div>
+                        <div class="persons ">
+                            <p>03 ( Selected)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="add-coupon">
+                    <input type="text" id="coupon" name="coupon" placeholder="Add Coupon">
+                    <button>Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="left-side-wrapper">
+                    <h2>Default Cards</h2>
+                    <div class="slider">
+                        <img src="../../assets/img/icons/card-arrow-right.svg" alt="" style="margin-right: 1rem;">
+                        <div class="card-wrapper" style="display: none;">
+                            <div class="card-details">
+                                <div class="bank">
+                                    <h3>Alfalah Bank Limited</h3>
+                                    <img src="../../assets/img/icons/visa.png" alt="">
+                                </div>
+                                <div class="card-number">
+                                    <p>4567 **** **** **** 4567</p>
+                                </div>
+                                <div class="card-holder-details">
+                                    <div class="card-holder-name">
+                                        <p class="card-heading">CARD HOLDER NAME</p>
+                                        <p>Suliman Munawar Khan</p>
+                                    </div>
+                                    <div class="card-expiry">
+                                        <p class="card-heading">EXPIRE DATE</p>
+                                        <p>05/2021</p>
+                                    </div>
+                                </div>
+                                <div class="select-card">
+                                    <h2>Use as default</h2>
+                                    <input type="checkbox" id="visa" name="visaCard" checked>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <div class="card-details">
+                                <div class="bank">
+                                    <h3>Meezan Bank Limited</h3>
+                                    <img src="../../assets/img/icons/visa.png" alt="">
+                                </div>
+                                <div class="card-number">
+                                    <p>4567 **** **** **** 4567</p>
+                                </div>
+                                <div class="card-holder-details">
+                                    <div class="card-holder-name">
+                                        <p class="card-heading">CARD HOLDER NAME</p>
+                                        <p>Suliman Munawar Khan</p>
+                                    </div>
+                                    <div class="card-expiry">
+                                        <p class="card-heading">EXPIRE DATE</p>
+                                        <p>05/2021</p>
+                                    </div>
+                                </div>
+                                <div class="select-card">
+                                    <h2>Use as default</h2>
+                                    <input type="checkbox" id="visa" name="visaCard">
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../../assets/img/icons/card-arrow-left.svg" alt="" style="margin-left: 1rem;">
+                    </div>
+
+                    <div class="form-wrapper">
+                        <h1>Add Card</h1>
+                        <form action="">
+                            <div class="form-card-number">
+                                <input name="credit-number" type="tel" placeholder="Card Number" maxlength="20">
+                            </div>
+                            <div class="form-cardholder-name">
+                                <input type="text" id="cardholderName" name="cardholderName" placeholder="Card Holder Name">
+                            </div>
+                            <div class="form-ExpireDate">
+                                <input type="date" id="edate" name="edate" placeholder="Expire Date">
+                            </div>
+                            <div class="form-cardholder-name">
+                                <input type="tel" id="cvc" name="cvc" placeholder="CVC" maxlength="3">
+                            </div>
+                            <div class="buttons">
+                                <button class="btn-back">Back</button>
+                                <button class="btn-checkout" routerLink="/order-success">Check out</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="checkout-wrapper">
+                    <img src="../../assets/img/book-slot-step-1.png" alt="">
+                    <div class="invoice-wrapper">
+                        <h2>Invoice</h2>
+                        <div class="items">
+                            <div class="item">
+                                <p>Burger</p>
+                                <p>$ 12</p>
+                            </div>
+                            <div class="item">
+                                <p>Pizza</p>
+                                <p>$ 12</p>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p>Subtotal</p>
+                            <p>$ 36</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<app-footer></app-footer>

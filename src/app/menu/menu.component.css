@@ -1,0 +1,208 @@
+.product.style-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: -5px;
+}
+.product.style-2 .section-header {
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+.product.style-2 .section-header .header-img {
+  margin: 10px 0 15px;
+}
+.product.style-2 .section-header > span {
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  color: #d60231;
+}
+.product.style-2 .section-wrapper .tab-bar {
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.product.style-2 .section-wrapper .tab-bar .tablinks {
+  padding: 12px 23px;
+  background: #fff;
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product.style-2 .section-wrapper .tab-bar .tablinks.active {
+  border-top: 2px solid #d60231;
+}
+.product.style-2 .section-wrapper .tab-bar .tablinks span {
+  font-weight: 700;
+  color: #362725;
+  display: inline-block;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.product.style-2 .section-wrapper .product-item {
+  margin: 5px;
+  border-radius: 250px;
+}
+
+.padding-tb {
+  padding: 70px 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.product-item.style-2 .product-thumb {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+.product-item.style-2 .product-content {
+  width: 100%;
+}
+.product-item.style-2 .product-content .product-title {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: dashed #e6e6e6;
+  border-width: 1px;
+}
+.product-item.style-2 .product-content h6 {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.product-item.style-2 .product-content .product-desc p {
+  color: #696969;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+[class*=" icofont-"],
+[class^=icofont-] {
+  font-family: IcoFont !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rating i {
+  color: #e9ba17;
+}
+
+.product-item.style-2 .product-content .product-title,
+.product-item.style-2,
+.product-item .product-thumb .price {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  padding: 30px 0;
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
+  text-align: center;
+  background: #fff;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+.product-item.style-2 {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fff;
+  margin: 5px;
+}
+.product-item.style-2 .product-thumb .price {
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  line-height: 38px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  border: 4px solid #fff;
+  background: #d60231;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: "";
+}
+.product-item img {
+  height: auto;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item:hover .product-thumb .price {
+  background: #fff;
+  border-color: #d60231;
+  color: #d60231;
+}
+.product-item:hover .product-content h6 a {
+  color: #d60231;
+}
+.product-item a {
+  clear: both;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+  color: #362725;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .padding-tb {
+    padding: 120px 0;
+  }
+}
+@media (min-width: 576px) {
+  .section-header {
+    margin-bottom: 50px;
+    margin-top: -10px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .product-item.style-2 {
+    text-align: left;
+  }
+  .product-item.style-2 .product-thumb {
+    margin-bottom: 0;
+    margin-left: 0;
+    position: relative;
+  }
+  .product-item.style-2 .product-content {
+    width: calc(100% - 150px);
+    padding: 0 10px 0 0;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .product-item .product-content p {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=menu.component.css.map */

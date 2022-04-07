@@ -1,0 +1,440 @@
+@import url('http://fonts.cdnfonts.com/css/hunters');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44821');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817');
+$yellow-color: #FFD02E;
+$heading-color: #404040;
+.left-content-wrapper {
+    padding: 4rem 0rem 0rem 0rem;
+    h3 {
+        font-family: 'Hunters', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+    }
+    .welcome-message {
+        .welcome {
+            color: $heading-color;
+        }
+        .eeo {
+            color: #00A9EC;
+            margin-top: -58px;
+            font-size: 144px;
+            margin-bottom: -35px;
+        }
+    }
+    .text-wrapper {
+        p {
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            color: #727272;
+        }
+    }
+    .search {
+        position: relative;
+        left: 100px;
+        .search-box {
+            background: #FFFFFF;
+            box-shadow: -3px -3px 4px rgb(0 0 0 / 3%), 3px 3px 4px rgb(0 0 0 / 9%);
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 455px;
+            height: 125px;
+            .input-box {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                align-items: center;
+                .location {
+                    position: absolute;
+                    right: 110px;
+                }
+            }
+            .search-input {
+                background: rgba(255, 255, 255, 0.24);
+                border: 1px solid rgba(0, 169, 236, 0.44);
+                box-sizing: border-box;
+                border-radius: 8px;
+                width: 55%;
+                margin-right: 5px;
+                padding: 0.3rem;
+                flex: 1;
+                outline: none;
+            }
+            .btn-search {
+                background: #FFD02E;
+                border-radius: 8px;
+                padding: 0.4rem 1.5rem;
+                border: 0;
+                color: white;
+            }
+        }
+    }
+}
+
+.righ-content-wrapper {
+    .hero-background {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 650px;
+            z-index: -1;
+            max-width: 650px;
+        }
+    }
+    .hero-background-2 {
+        img {
+            position: absolute;
+            right: 0px;
+            top: 118px;
+            width: 711px;
+            max-width: 720px;
+        }
+    }
+}
+
+// food-menu-list css 
+.food-menu-heading {
+    h2 {
+        font-family: 'Hunters';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 120px;
+        color: #00A9EC;
+    }
+}
+
+.pt-6 {
+    padding-top: 5rem;
+}
+
+.pb-6 {
+    padding-bottom: 5rem;
+}
+
+// food-menu-list css
+// food-menu-items css 
+.menu-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 23%;
+    margin: 0.5rem 0.5rem;
+    transition: transform .2s;
+    &:hover {
+        transform: scale(1.05)
+    }
+    .img-container {
+        img {
+            width: 100%;
+            max-width: 100%;
+            // transition: transform .2s;
+            // &:hover {
+            //     transform: scale(1.1)
+            // }
+        }
+    }
+    .rating-addto-cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem 0.5rem;
+        .fa-star {
+            color: #FFD02E;
+        }
+    }
+    .name-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.5rem;
+        h3 {
+            font-family: 'Proxima Nova';
+            font-weight: 600;
+            font-size: 18px;
+            color: $heading-color;
+        }
+        p {
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            color: black;
+        }
+    }
+    .food-desc {
+        padding: 0.5rem;
+    }
+}
+
+.tabset {
+    input[type="radio"] {
+        position: absolute;
+        left: -200vw;
+    }
+    .tab-panel {
+        display: none;
+    }
+    input {
+        &:first-child {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        >.tab-panel {
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        .tab-panel {
+                            &:nth-child(2) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        .tab-panel {
+                            &:nth-child(3) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(7) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        .tab-panel {
+                            &:nth-child(4) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(9) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        .tab-panel {
+                            &:nth-child(5) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(11) {
+            &:checked {
+                ~ {
+                    .tab-panels {
+                        >.tab-panel {
+                            &:nth-child(6) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:focus {
+            + {
+                label {
+                    color: $yellow-color;
+                    &::after {
+                        background: $yellow-color;
+                    }
+                }
+            }
+        }
+        &:checked {
+            label {
+                &::after {
+                    background: black;
+                }
+                border-color: black;
+                border-bottom: 1px solid #fff;
+                margin-bottom: -1px;
+            }
+        }
+    }
+    label {
+        position: relative;
+        display: inline-block;
+        padding: 0.5rem 0.9rem;
+        cursor: pointer;
+        // font-weight: 600;
+        // &::after {
+        // 	content: "";
+        // 	position: absolute;
+        // 	left: 15px;
+        // 	bottom: 10px;
+        // 	width: 22px;
+        // 	height: 4px;
+        // 	background: #8d8d8d;
+        // }
+        &:hover {
+            color: $yellow-color;
+            &::after {
+                color: $yellow-color;
+            }
+        }
+    }
+    max-width: 70%;
+    margin: 6rem auto;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    // border-top: 1px solid #ccc;
+}
+
+* {
+    box-sizing: border-box;
+    &:before {
+        box-sizing: border-box;
+    }
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+.tabset>label:hover,
+.tabset>input:focus,
+.tabset>input:checked+label {
+    color: white;
+    background: $yellow-color;
+    border-radius: 5px;
+}
+
+.all-menu-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// food-menu-items css
+// download app from store css 
+.download-app {
+    background: #00A9EC;
+    position: relative;
+    height: 330px;
+    .app-img {
+        width: 30%;
+        img {
+            width: 303px;
+            height: 500px;
+            position: absolute;
+            top: -89px;
+            left: 7%;
+            transition: transform .2s;
+            &:hover {
+                transform: scale(1.05)
+            }
+        }
+    }
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        .text-wrapper {
+            width: 65%;
+            margin: 1.5rem auto;
+            .heading {
+                h3 {
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 42px;
+                    color: rgb(255, 255, 255);
+                }
+                p {
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 22px;
+                    color: rgb(255, 255, 255);
+                }
+                .download-app-imgs {
+                    img {
+                        transition: transform .2s;
+                        &:hover {
+                            transform: scale(1.05);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// download app from store css
+// testimonial section css
+.testimonial-wrapper {
+    display: flex;
+    .left-side-container {
+        width: 50%;
+        .img-wrapper {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .text-wrapper {
+            p {
+                width: 60%;
+            }
+        }
+    }
+    .right-side-container {
+        width: 50%;
+        .testimonial-img {
+            position: relative;
+            max-width: 100%;
+            img {
+                width: 70%;
+            }
+            .review {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 6px rgb(0 0 0 / 18%);
+                border-radius: 10px;
+                width: 50%;
+                position: absolute;
+                top: 200px;
+                left: -95px;
+                padding: 0.5rem;
+                height: 110px;
+                max-height: 110px;
+                .name-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #000000;
+                }
+                .fa-star {
+                    color: #FFD02E;
+                }
+            }
+        }
+    }
+}
+
+// testimonial section css

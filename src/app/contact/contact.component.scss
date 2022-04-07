@@ -1,0 +1,78 @@
+@import url('http://fonts.cdnfonts.com/css/hunters');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44821');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817');
+
+/* Colors used in website */
+
+$fb-btn: #4267B2;
+$google-btn: #DB4437;
+$apple-btn: #000000;
+$blue-color: #00A9EC;
+$yellow-color: #FFD02E;
+$gray-color: #7B7B7B;
+
+/*  */
+
+.heading {
+    text-align: center;
+    h1 {
+        font-family: 'Hunters';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 144px;
+        color: $blue-color;
+    }
+}
+
+.contact-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem 0 10rem 0;
+}
+
+.contact-info {
+    h3 {
+        font-family: 'Proxima Nova';
+        font-weight: 400;
+        font-size: 36px;
+        color: $blue-color;
+    }
+    p {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: $gray-color;
+        span {
+            margin-left: 10px;
+        }
+    }
+}
+
+.contact-form {
+    input,
+    textarea {
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 169, 236, 0.44);
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 100%;
+        margin: 0.5rem auto;
+        height: 45px;
+        padding-left: 12px;
+        outline: none;
+        &:focus {
+            border: 2px solid rgba(0, 169, 236, 0.87);
+        }
+    }
+    .submit {
+        border-radius: 8px;
+        color: white;
+        background: $yellow-color;
+        border: 0;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}

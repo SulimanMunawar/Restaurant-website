@@ -1,0 +1,58 @@
+<section class="product style-2 padding-tb" style="background-image: url(../../assets/img/menu/product-2.jpg)">
+    <div class="container">
+        <div class=" container-fluid my-5 ">
+            <div class="row justify-content-center ">
+                <div class="col-xl-10">
+                    <div class="card shadow-lg ">
+                        <div class="row justify-content-around">
+                            <div class="col-md-10 pt-3">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="selected-item mb-4">
+                                            <img src="../../assets/img/menu/add-on-img.png" alt="">
+                                        </div>
+                                        <div class="selected-menu-text-wraper">
+                                            <div class="addons pb-4 pt-4">
+                                                <div class="addon-text">
+                                                    <h4>{{mainMenu.name}}</h4>
+                                                    <p class="addon-price">$ {{mainMenu.price}}</p>
+                                                </div>
+                                                <div class="my-auto counter-btn" >
+                                                    <span class="fa fa-minus-circle" (click)="SubtractQuantity();"></span>
+                                                    <span id="quantity"> {{menuItemQuantity}} </span>
+                                                    <span class="fa fa-plus-circle" (click)="AddQuantity();"></span>
+                                                </div>
+                                            </div>
+                                            <h4>Pizza Italian</h4>
+                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex erat, aliquam et molestie eget, gravida ut tellus. Fusce et arcu sit amet metus placerat sodales in vitae mi. Morbi eget leo enim.</p>
+                                        </div>
+                                        <div class="selected-menu-text-wraper">
+                                            <h4>Addons</h4>
+                                            <div class="addons pb-4 pt-4" *ngFor="let addonItems of itemAddOns; let i = index;">
+                                                <img src="../../assets/img/menu/addon-1.png" alt="">
+                                                <div class="addon-text">
+                                                    <h4>{{addonItems.name}}</h4>
+                                                    <p class="addon-price">$ {{addonItems.price}}</p>
+                                                </div>
+                                                <div class="my-auto counter-btn">
+                                                    <span class="fa fa-minus-circle" (click)="onChange(i, -1)"></span>
+                                                    <span id="{{addonItems.id}}" >{{addonItems.quantity}} </span>
+                                                    <span class="fa fa-plus-circle" (click)="onChange(i, 1)"></span>
+                                                </div>
+                                            </div>
+                                           
+
+                                        </div>
+                                        <div class="d-md-flex justify-content-md-end">
+                                        <button class="btn btn-warning" type="submit" (click)="AddToCart();">Add To Cart</button>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

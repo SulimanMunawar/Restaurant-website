@@ -1,0 +1,33 @@
+nav .multiLevelMenu:hover .dropdown-menu {
+  display: block;
+}
+
+nav.ftco-navbar-light .navbar-brand img {
+  width: 80px;
+}
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  border: none;
+  border-radius: 0px;
+  padding: 10px;
+  -webkit-box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover {
+  background: #00A9EC;
+  color: #ffffff;
+}
+
+.navbar-light .navbar-toggler:hover {
+  background: #00A9EC;
+}
+/*# sourceMappingURL=top-bar.component.css.map */

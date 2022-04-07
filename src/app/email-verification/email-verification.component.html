@@ -1,0 +1,26 @@
+<app-main-menu></app-main-menu>
+<section>
+    <div class="login-wrapper">
+        <div class="heading">
+            <h1>Email Verification</h1>
+            <p>Please check your email and enter 6 digit code below
+            </p>
+        </div>
+        <div class="login-form">
+            <form action="">
+
+                <div class="form-control">
+                    <input type="text" name="text" id="text" placeholder="654321" maxlength="6">
+                </div>
+
+                <div class="form-control">
+                    <button class="btn-login">Verify Code</button>
+                </div>
+            </form>
+        </div>
+        <div class="need">
+            <p>Didn’t received code? <a routerLink="/verify-email">Send Again</a> </p>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

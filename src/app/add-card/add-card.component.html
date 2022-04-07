@@ -1,0 +1,123 @@
+<nav class="menu" tabindex="0">
+    <div class="smartphone-menu-trigger"></div>
+    <header class="avatar">
+        <img [src]="userProfile.picture" />
+        <h2>{{userProfile.name}}</h2>
+        <p>{{userProfile.address}}</p>
+        <button class="btn-edit" routerLink="/dashboard">Edit Profile</button>
+    </header>
+    <ul>
+        <li tabindex="0" class="icon-dashboard" routerLink="/my-profile"><span>My Profile</span></li>
+        <li tabindex="0" class="icon-customers" routerLink="/add-card"><span>Payment</span></li>
+        <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+        <li tabindex="0" class="icon-allergence" routerLink="/allergence"><span>Allergens</span></li>
+        <li tabindex="0" class="icon-dietary" routerLink="/dietary"><span>Dietary</span></li>
+        <li tabindex="0" class="icon-privacy"><span>Privacy</span></li>
+        <li tabindex="0" class="icon-help" routerLink="/help"><span>Help</span></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="product style-2 padding-tb">
+        <div class="container">
+            <div class="row justify-content-center pt-5" style="padding-bottom: 7.5rem;">
+                <div class="col-xl-10 pb-5">
+                    <div class="card shadow-lg ">
+                        <div class="row justify-content-around">
+                            <div class="col-md-7 pt-3">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="contact-form">
+                                            <form [formGroup]="cardForm">
+                                                <h3>Add Card</h3>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <!-- <img src="../../assets/img/icons/visa.png" alt=""> -->
+                                                            <input type="text" name="number" formControlName="number" class="form-control" placeholder="1234 1234 1234 1234" value="" />
+                                                        </div>
+                                                        <small class="text-danger" *ngIf="
+                                                        cardForm.get('number')?.touched &&
+                                                        cardForm.get('number')?.invalid
+                                                        ">Invalid Number</small>
+                                                        <div class="form-group">
+                                                            <input type="text" name="name" formControlName="name" class="form-control" placeholder="Card Holder Name" value="" />
+                                                        </div>
+                                                        <small class="text-danger" *ngIf="
+                                                        cardForm.get('name')?.touched &&
+                                                        cardForm.get('name')?.invalid
+                                                        ">Invalid Name</small>
+                                                        <div class="form-group">
+
+                                                            <input type="month" name="expiryDate" formControlName="expiryDate" class="form-control" placeholder="Expire Date" value="" />
+                                                        </div>
+                                                        <small class="text-danger" *ngIf="
+                                                        cardForm.get('expiryDate')?.touched &&
+                                                        cardForm.get('expiryDate')?.invalid
+                                                        ">Invalid expiryDate</small>
+                                                        <div class="form-group">
+
+                                                            <input type="text" name="cvc" formControlName="cvc" class="form-control" placeholder="CVC" value="" />
+                                                        </div>
+                                                        <small class="text-danger" *ngIf="
+                                                        cardForm.get('cvc')?.touched &&
+                                                        cardForm.get('cvc')?.invalid
+                                                        ">Invalid CVC</small>
+                                                        <div class="form-group text-center">
+                                                            <input type="submit" (click)="StoreCreditCard()" name="btnSubmit" class="btnContact" value="Save" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 pb-5">
+                    <div class="card shadow-lg ">
+                        <div class="row justify-content-around">
+                            <div class="col-md-7 pt-3">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="contact-form">
+                                            <h3>Added Card</h3>
+                                            <div class="credit-card" *ngFor="let cards of cardList">
+                                                <div class="heading">
+                                                    <h4>Bank Name</h4>
+                                                    <!-- <img src="../../assets/img/icons/visa.png" alt=""> -->
+                                                </div>
+
+                                                <div class="card-number">
+                                                    <p>**** **** **** {{cards.last4}}</p>
+                                                </div>
+                                                <div class="holder-name">
+                                                    <div class="name">
+                                                        <h4>{{cards.customerName}}</h4>
+                                                    </div>
+                                                    <div class="name">
+                                                        <p>Expire Date</p>
+                                                        <h4>{{cards.expMonth}}/{{cards.expYear}}</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="use-default">
+                                                    <p>Use Default</p>
+                                                    <div class="radio">
+                                                        <input id="radio-2" name="radio" type="radio">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

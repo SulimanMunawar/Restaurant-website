@@ -1,0 +1,76 @@
+<br><br>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card card-container">
+                <div class="col-md-6 col-lg-6">
+                    <form [formGroup]="loginForm" (ngSubmit)="Register()">
+
+                        <div class="form-group">
+                            <label for="name">UserName</label>
+                            <input type="text" class="form-control" name="name" formControlName="name" />
+                            <!-- <div class="alert-danger" *ngIf="email.errors && f.submitted">
+              <div *ngIf="email.errors.required">Email is required</div>
+              <div *ngIf="email.errors.email">
+                Email must be a valid email address
+              </div>
+            </div> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone Number</label>
+                            <input type="tel" class="form-control" name="phoneNumber" formControlName="phoneNumber" />
+                            <!-- <div class="alert-danger" *ngIf="email.errors && f.submitted">
+              <div *ngIf="email.errors.required">Email is required</div>
+              <div *ngIf="email.errors.email">
+                Email must be a valid email address
+              </div>
+            </div> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" formControlName="email" />
+                            <!-- <div class="alert-danger" *ngIf="email.errors && f.submitted">
+            <div *ngIf="email.errors.required">Email is required</div>
+            <div *ngIf="email.errors.email">
+              Email must be a valid email address
+            </div>
+          </div> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" formControlName="password" />
+                            <!-- <div class="alert-danger" *ngIf="password.errors && f.submitted">
+            <div *ngIf="password.errors.required">Password is required</div>
+            <div *ngIf="password.errors.minlength">
+              Password must be at least 6 characters
+            </div>
+          </div> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" name="confirmPassword" formControlName="confirmPassword" />
+                            <!-- <div class="alert-danger" *ngIf="password.errors && f.submitted">
+              <div *ngIf="password.errors.required">Password is required</div>
+              <div *ngIf="password.errors.minlength">
+                Password must be at least 6 characters
+              </div>
+            </div> -->
+                        </div>
+                        <div class="form-group mt-2 mb-4">
+                            <button type="submit" (click)="Register()" [routerLink]="['/home']" class="btn btn-primary btn-block">Login</button>
+                        </div>
+                        <!-- <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+          Signup failed!<br />{{ errorMessage }}
+        </div> -->
+                    </form>
+                </div>
+                <!-- <div class="alert alert-success" *ngIf="isSuccessful">
+        Your registration is successful!
+      </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>

@@ -1,0 +1,329 @@
+/* FONTS */
+
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44821');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44817');
+
+/* FONTS */
+
+
+/* COLORS */
+
+$gray-color: #404040;
+$yellow-color: #FFD02E;
+$blue-color: #00A9EC;
+$darkcolor: #444;
+
+/* COLORS */
+
+.pay-bill {
+    padding: 3.5rem 19rem;
+    display: flex;
+    flex-direction: column;
+    .booking-details {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+            color: $gray-color;
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .date,
+        .time {
+            display: flex;
+        }
+        .slot-booking {
+            margin: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            border-radius: 8px;
+            border-bottom-left-radius: 0;
+            padding: 1rem 2rem;
+            flex: 1;
+            // margin-bottom: 0.5rem;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: 1px solid #80808030;
+            p {
+                color: $gray-color;
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        .persons {
+            margin: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            // border-radius: 8px;
+            border-right: 1px solid #80808030;
+            padding: 1rem 2rem;
+            flex: 1;
+            // margin-bottom: 0.5rem;
+        }
+        .date {
+            margin: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            // border-radius: 8px;
+            border-right: 1px solid #80808030;
+            padding: 1rem 2rem;
+            flex: 1;
+            // margin-bottom: 0.5rem;
+        }
+        .time {
+            margin: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            border-top-right-radius: 8px;
+            padding: 1rem 2rem;
+            flex: 1;
+            // margin-bottom: 0.5rem;
+        }
+    }
+    .booking-details-2 {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+        .date,
+        .time {
+            display: flex;
+        }
+        .slot-booking {
+            margin: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            border-bottom-left-radius: 8px;
+            padding: 1rem 2rem;
+            margin-top: 0.1rem;
+            border-right: 1px solid #80808030;
+            p {
+                color: $gray-color;
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        .persons {
+            margin: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            border-bottom-right-radius: 8px;
+            padding: 1rem 2rem;
+            margin-top: 0.1rem;
+            flex: 1;
+            p {
+                color: $gray-color;
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.add-coupon {
+    padding: 0 0 3rem 19rem;
+    input {
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 169, 236, 0.44);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+        border-radius: 8px;
+        width: 423px;
+        height: 48px;
+        padding-left: 0.7rem;
+        margin-right: 1rem;
+        outline: none;
+    }
+    button {
+        background: #FFD02E;
+        box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+        border-radius: 8px;
+        border: 0;
+        padding: 0.6rem 3rem;
+        color: white;
+    }
+}
+
+.left-side-wrapper {
+    padding: 0 0 0 19rem;
+    .slider {
+        display: flex;
+        justify-content: center;
+        img {
+            cursor: pointer;
+        }
+        .card-wrapper {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+            border-radius: 10px;
+            width: 65%;
+            .card-details {
+                padding: 1rem;
+                .bank {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3 {
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $gray-color;
+                    }
+                }
+                .card-number {
+                    padding-top: 1.3rem;
+                    p {
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $gray-color;
+                    }
+                }
+                .card-holder-details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 1rem;
+                    p {
+                        margin: 0;
+                    }
+                    .card-holder-name {
+                        p {
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: $gray-color;
+                        }
+                        .card-heading {
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 10px;
+                        }
+                    }
+                    .card-expiry {
+                        p {
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: $gray-color;
+                        }
+                        .card-heading {
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .select-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h2 {
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: $gray-color;
+                    }
+                }
+            }
+        }
+    }
+    .form-wrapper {
+        padding: 1rem 0rem;
+        h1 {
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            color: $gray-color;
+        }
+        input {
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 169, 236, 0.44);
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 515px;
+            height: 48px;
+            padding-left: 0.7rem;
+            margin-right: 1rem;
+            outline: none;
+            margin: 0.5rem 0;
+        }
+        .buttons {
+            .btn-back {
+                background: $blue-color;
+                box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+                border-radius: 8px;
+                border: 0;
+                padding: 0.6rem 3rem;
+                color: white;
+                margin-right: 1rem;
+            }
+            .btn-checkout {
+                background: $yellow-color;
+                box-shadow: 0px 2px 20px rgb(0 169 236 / 10%);
+                border-radius: 8px;
+                border: 0;
+                padding: 0.6rem 3rem;
+                color: white;
+            }
+        }
+    }
+}
+
+.checkout-wrapper {
+    padding: 0 15rem;
+    .invoice-wrapper {
+        h2 {
+            text-align: center;
+            &::after {
+                content: "";
+                display: inline-block;
+                border-top: 0.1rem solid #E0E0E0;
+                width: 25rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+        .items {
+            .item {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                border-top: 0.2rem solid #E0E0E0;
+                width: 28rem;
+            }
+        }
+        .total {
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                color: $gray-color;
+            }
+        }
+    }
+}

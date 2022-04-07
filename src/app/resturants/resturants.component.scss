@@ -1,0 +1,256 @@
+$gray-color: #404040;
+$yellow-color: #FFD02E;
+$blue-color: #00A9EC;
+.tab {
+    position: relative;
+    margin-bottom: .01em;
+    width: 70%;
+    color: $gray-color;
+    overflow: hidden;
+    label {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-left: 5px;
+    }
+}
+
+.jacordian input[name="tabs"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.jacordian label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: transparent;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    .checkbox-title {
+        font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .family-member {
+        margin-left: 25px;
+        img {
+            width: 13%;
+            border-radius: 50%;
+            max-width: 15%;
+            min-width: 13%;
+        }
+    }
+    .family-member-name {
+        margin-left: 10px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .family-member-relation {
+        margin-left: 10px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: $blue-color;
+    }
+}
+
+.tab-content p {
+    margin: 1em;
+}
+
+
+/* :checked */
+
+.jacordian input:checked~.tab-content {
+    max-height: 27em;
+}
+
+
+/* Icon */
+
+.jacordian label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+.jacordian input[type=checkbox]+label::after {
+    content: "\23F7";
+}
+
+.jacordian input[type=radio]+label::after {
+    content: "\25BC";
+}
+
+.jacordian input[type=checkbox]:checked+label::after {
+    transform: rotate(180deg);
+}
+
+.jacordian input[type=radio]:checked+label::after {
+    transform: rotateX(190deg);
+}
+
+// filter checkboxes css
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.checkbox:hover .checkbox__check {
+    background: transparent;
+}
+
+.checkbox__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox__input:checked+.checkbox__check {
+    background: transparent;
+    stroke-dashoffset: 0;
+}
+
+.checkbox__check {
+    border: 0.2rem solid $yellow-color;
+    background: transparent;
+    stroke: $yellow-color;
+    stroke-dasharray: 25;
+    stroke-dashoffset: 25;
+    stroke-linecap: round;
+    stroke-width: 0.2rem;
+    border-radius: 0.2rem;
+    fill: none;
+    transition: background 0.4s, stroke-dashoffset 0.6s;
+}
+
+// right side content css 
+.search-wrapper {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    align-items: center;
+    input {
+        background: rgba(255, 255, 255, 0.24);
+        border: 1px solid rgba(0, 169, 236, 0.44);
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 435px;
+        margin: 0.5rem 0.5rem;
+        height: 40px;
+    }
+    .location {
+        position: absolute;
+        right: 115px;
+    }
+    .btn-search {
+        background: #FFD02E;
+        border-radius: 8px;
+        padding: 0.4rem 1.5rem;
+        border: 0;
+        color: white;
+    }
+}
+
+.resturant-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .single-resturant-wrapper {
+        margin: 0.5rem 0.6rem;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 31%;
+        max-width: 32%;
+        transition: 0.5s ease-in-out;
+        .resturant-img {
+            width: 100%;
+            height: 60%;
+        }
+        .rating {
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+            background: rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            align-items: center;
+            bottom: 40px;
+            transition: 0.5s ease-in-out;
+        }
+        .fa-star {
+            color: $yellow-color;
+        }
+        .resturant-name {
+            margin-top: -38px;
+            margin-left: 16px;
+            cursor: pointer;
+            p {
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+            }
+        }
+        .resturant-desc {
+            // display: flex;
+            // flex-direction: row;
+            .icon {
+                width: 15%;
+                max-width: 15%;
+            }
+            .first-row {
+                display: flex;
+                align-items: center;
+                .item-wrapper {
+                    width: 155px;
+                    .item {
+                        display: flex;
+                        justify-content: space-around;
+                        margin-bottom: 15px;
+                        p {
+                            font-size: 15px;
+                            width: 75px;
+                            max-width: 75px;
+                            margin-bottom: 0;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

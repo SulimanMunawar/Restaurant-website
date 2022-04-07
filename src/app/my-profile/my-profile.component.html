@@ -1,0 +1,52 @@
+<nav class="menu" tabindex="0">
+    <div class="smartphone-menu-trigger"></div>
+    <header class="avatar">
+        <img [src]="userProfile.picture" />
+        <h2>{{userProfile.name}}</h2>
+        <p>{{userProfile.address}}</p>
+        <button class="btn-edit" routerLink="/dashboard">Edit Profile</button>
+    </header>
+    <ul>
+        <li tabindex="0" class="icon-dashboard" routerLink="/my-profile"><span>My Profile</span></li>
+        <li tabindex="0" class="icon-customers" routerLink="/add-card"><span>Payment</span></li>
+        <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+        <li tabindex="0" class="icon-allergence" routerLink="/allergence"><span>Allergens</span></li>
+        <li tabindex="0" class="icon-dietary" routerLink="/dietary"><span>Dietary</span></li>
+        <li tabindex="0" class="icon-privacy"><span>Privacy</span></li>
+        <li tabindex="0" class="icon-help" routerLink="/help"><span>Help</span></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="product style-2 padding-tb">
+        <div class="container">
+            <div class="row justify-content-center pt-5" style="padding-bottom: 4.7rem;">
+                <div class="col-xl-6 pb-5 pt-5">
+                    <div class="card shadow-lg ">
+                        <div class="row">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <div class="profile">
+                                        <img src="../../assets/img/icons/User_box.svg" alt="">
+                                        <h4>My Profile</h4>
+                                        <button class="btn-create" routerLink="/create-profile">Create Account</button>
+                                    </div>
+                                    <div class="profile-lists" *ngFor="let profile of profilesList;">
+                                        <ul class="list">
+                                            <li class="list-item">{{profile.name}} </li>
+                                            <li class="list-item sub-heading">{{profile.relationType}}</li>
+                                            <li class="list-item"><img src="../../assets/img/icons/Arrow_forward.svg" alt=""></li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

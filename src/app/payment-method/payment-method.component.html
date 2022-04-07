@@ -1,0 +1,20 @@
+<section class="product style-2 padding-tb" style="background-image: url(../../assets/img/menu/product-2.jpg)">
+    <div class="container">
+        <div class="section-header">
+            <img src="../../assets/img/menu/sc-img.png" alt="sc-img" class="header-img" />
+            <h2>Restaurant Name</h2>
+            <span>Our Tasty Menu Today</span>
+        </div>
+
+        <div *ngFor="let permission of permissions;" class="payment-methhod-box">
+            <img class="payment-method-icon" src="../../assets/img/icons/bill.svg" alt="" />
+            <p class="payment-text">{{permission.permissionsDescription}}</p>
+            <input class="payment-check" [value]="permission.id" [(ngModel)]="permissionsType" type="radio">
+        </div>
+        <button class="btnContact" (click)="SubmitData()" type="submit" [routerLink]="['/invite-friends']" routerLinkActive="router-link-active">
+            Next
+        </button>
+
+    </div>
+</section>
+<app-footer></app-footer>

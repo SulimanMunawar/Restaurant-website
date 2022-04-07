@@ -1,0 +1,182 @@
+<app-main-menu>
+</app-main-menu>
+<div class="containter-fluid">
+    <div class="row gx-0">
+        <div class="col-md-2">
+            <aside>
+                <div class="sidebar-container">
+                    <div class="profile-section">
+                        <div class="user-profile">
+                            <img src="../../assets/img/stuff-img-03.jpg" alt="">
+                        </div>
+                        <div class="user-detail">
+                            <h4>Suliman Munawar Khan</h4>
+                            <p>Islamabad</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li routerLink="/dashboard" routerLinkActive="active"> <img src="../../assets/img/icons/my-profile.svg" alt=""> My Profile</li>
+                            <li routerLink="/payment" routerLinkActive="active"> <img src="../../assets/img/icons/payment.svg" alt=""> Payment</li>
+                            <li routerLink="/dietary" routerLinkActive="active"> <img src="../../assets/img/icons/dietry.svg" alt=""> Dietary</li>
+                            <li routerLink="/allergens" routerLinkActive="active"> <img src="../../assets/img/icons/allergence.svg" alt=""> Allergens</li>
+                            <li routerLink="/settings" routerLinkActive="active"> <img src="../../assets/img/icons/setting.svg" alt=""> Settings</li>
+                            <li routerLink="/privacy" routerLinkActive="active"> <img src="../../assets/img/icons/privacy.svg" alt=""> Privacy</li>
+                            <li routerLink="/help" routerLinkActive="active"> <img src="../../assets/img/icons/Help.svg" alt=""> Help</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-10">
+            <div class="content">
+                <div class="privacy-wrapper">
+                    <div class="heading">
+                        <img src="../../assets/img/icons/privacy.svg" alt="">
+                        <h3>Privacy</h3>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li (click)="changeStatus($event)">1. Contact Details</li>
+                            <li (click)="changeStatus($event)">2. How We Collect Your Information</li>
+                            <li (click)="changeStatus($event)">3. Information We Collect From You</li>
+                            <li (click)="changeStatus($event)">4. Use Of Your Information</li>
+                            <li (click)="changeStatus($event)">5. Sharing Your Information</li>
+                            <li (click)="changeStatus($event)">6. Security</li>
+                            <li (click)="changeStatus($event)">7. Your Rights</li>
+                            <li (click)="changeStatus($event)">8. Changes To Our Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="div" *ngIf="currentStatus === '1. Contact Details'">
+                        <div class="title">
+                            1. Contact Details
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '2. How We Collect Your Information'">
+                        <div class="title">
+                            2. How We Collect Your Information
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '3. Information We Collect From You'">
+                        <div class="title">
+                            3. Information We Collect From You
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '4. Use Of Your Information'">
+                        <div class="title">
+                            4. Use Of Your Information
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '5. Sharing Your Information'">
+                        <div class="title">
+                            5. Sharing Your Information
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '6. Security'">
+                        <div class="title">
+                            6. Security
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor
+                            </p>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum do</p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '7. Your Rights'">
+                        <div class="title">
+                            7. Your Rights
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div" *ngIf="currentStatus === '8. Changes To Our Privacy Policy'">
+                        <div class="title">
+                            8. Changes To Our Privacy Policy
+                        </div>
+                        <div class="desc">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut accusamus?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus tempora provident aspernatur maxime, expedita aliquam iste dolorem ex! Non veniam repudiandae pariatur autem aspernatur quidem suscipit explicabo ut
+                                accusamus?
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

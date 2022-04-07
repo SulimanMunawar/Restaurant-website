@@ -1,0 +1,27 @@
+.addons {
+  display: flex;
+  width: 500px;
+}
+.addons .addon-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.addons .addon-text .addon-price {
+  color: #82EA00;
+  font-size: 17px;
+  font-weight: 600;
+}
+.addons .counter-btn {
+  background: #faa61a;
+  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  margin-left: 40px;
+}
+.addons .counter-btn .fa {
+  padding: 5px;
+}/*# sourceMappingURL=add-on.component.css.map */

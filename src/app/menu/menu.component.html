@@ -1,0 +1,629 @@
+<section class="product style-2 padding-tb" style="background-image: url(../../assets/img/menu/product-2.jpg)">
+    <div class="container">
+        <div class="section-header">
+            <img src="../../assets/img/menu/sc-img.png" alt="sc-img" class="header-img" />
+            <span>Foods Item</span>
+            <h2>Our Tasty Menu Today</h2>
+        </div>
+        <div class="section-wrapper">
+            <tabset class="tab-bar">
+                <tab heading="Burger Menu">
+                    <!-- <img src="../../assets/img/menu/01.png" alt="food-product" /> -->
+                    <ng-template [ngTemplateOutlet]="burger"></ng-template>
+                </tab>
+                <tab heading="Pizza Menu">
+                    <ng-template [ngTemplateOutlet]="pizza"></ng-template>
+                </tab>
+                <tab heading="Pizza Menu">
+                    <!-- <img src="../../assets/img/menu/02.png" alt="food-product" /> -->
+                    <ng-template [ngTemplateOutlet]="pizza"></ng-template>
+                </tab>
+                <tab heading="Snaks Menu">
+                    <!-- <img src="../../assets/img/menu/03.png" alt="food-product" /> -->
+                    <ng-template [ngTemplateOutlet]="snaks"></ng-template>
+                </tab>
+                <tab heading="Drinks Menu">
+                    <!-- <img src="../../assets/img/menu/04.png" alt="food-product" /> -->
+                    <ng-template [ngTemplateOutlet]="drinks"></ng-template>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</section>
+
+<!-- testing  -->
+<!-- 
+<tabset>
+    <tab heading="Home">
+        <ng-template [ngTemplateOutlet]="pizza"></ng-template>
+    </tab>
+    <tab *ngFor="let tabz of tabs" [heading]="tabz.title" [active]="tabz.active" (selectTab)="tabz.active = true">
+        {{tabz?.content}}
+    </tab>
+</tabset> -->
+<!-- Tab Content -->
+<ng-template #burger>
+    <div class="p-3 mb-0">
+        <div id="burger" class="tabcontent">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/01.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Burger Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/02.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Burger Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/03.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#"> Burger Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/04.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Burger Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/05.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/06.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/07.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/08.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Burger Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<!-- Tab Content -->
+<ng-template #pizza>
+    <div class="p-3 mb-0">
+        <div id="pizza" class="tabcontent">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/09.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">pizza Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/10.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">pizza Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/11.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">pizza Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/12.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">pizza Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #snaks>
+    <div class="p-3 mb-0">
+        <div id="snaks" class="tabcontent">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/13.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">snaks Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/14.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">snaks Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/15.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">snaks Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/16.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/17.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/18.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #drinks>
+    <div class="p-3 mb-0">
+        <div id="drinks" class="tabcontent">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/19.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/20.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/01.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-item style-2">
+                        <div class="product-thumb">
+                            <img src="../../assets/img/menu/02.jpg" alt="food-product" />
+                            <span class="price">$20</span>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h6><a href="#">Cream Chicken Chiladas</a></h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <p>
+                                    Conveniently imaiipact are worldwide andng datang arovem theme with there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

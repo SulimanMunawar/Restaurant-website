@@ -1,0 +1,24 @@
+.content {
+    .success-img {
+        img {
+            width: 22%;
+        }
+    }
+    .success-text {
+        .success-heading {
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .btn-back {
+        background: #FFD02E;
+        border-radius: 8px;
+        border: 0;
+        color: white;
+        padding: 1rem 6rem;
+    }
+}

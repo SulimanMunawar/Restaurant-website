@@ -1,0 +1,266 @@
+main {
+    position: relative;
+}
+
+.menu {
+    background: #FFD02E;
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    // top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+    .avatar {
+        padding: 2em 0.5em;
+        text-align: center;
+        img {
+            width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #ffea92;
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+        }
+        h2 {
+            font-weight: normal;
+            color: #fff;
+        }
+        p {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .btn-edit {
+            border: 1px solid #00A9EC;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background: transparent;
+            color: #00A9EC;
+            padding: 0.3rem 1.5rem;
+        }
+    }
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 0.5em 1em 0.5em 3em;
+    font-size: 0.95em;
+    font-weight: regular;
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-size: auto 20px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.menu ul li.icon-dashboard {
+    background-image: url("http://www.entypo.com/images//user.svg");
+}
+
+.menu ul li.icon-customers {
+    background-image: url("http://www.entypo.com/images//briefcase.svg");
+}
+
+.menu ul li.icon-users {
+    background-image: url("http://www.entypo.com/images//users.svg");
+}
+
+.menu ul li.icon-settings {
+    background-image: url("http://www.entypo.com/images//tools.svg");
+}
+
+.menu ul li.icon-allergence {
+    background-image: url("../../assets/img/icons/allergence.svg");
+}
+
+.menu ul li.icon-dietary {
+    background-image: url("../../assets/img/icons/Help.svg");
+}
+
+.menu ul li.icon-privacy {
+    background-image: url("http://www.entypo.com/images//lock.svg");
+}
+
+.menu ul li.icon-help {
+    background-image: url("http://www.entypo.com/images//help.svg");
+}
+
+.menu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul li:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 900px) and (min-width: 400px) {
+    .menu {
+        width: 90px;
+    }
+    .menu .avatar {
+        padding: 0.5em;
+        position: relative;
+    }
+    .menu .avatar img {
+        width: 60px;
+    }
+    .menu .avatar h2 {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        margin: 0;
+        min-width: 200px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.4);
+        transform: translate3d(-20px, -50%, 0);
+        transition: all 0.15s ease-in-out;
+    }
+    .menu .avatar:hover h2 {
+        opacity: 1;
+        transform: translate3d(0px, -50%, 0);
+    }
+    .menu ul li {
+        height: 60px;
+        background-position: center center;
+        background-size: 30px auto;
+        position: relative;
+    }
+    .menu ul li span {
+        opacity: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.2em 0.5em;
+        border-radius: 4px;
+        top: 50%;
+        left: 80px;
+        transform: translate3d(-15px, -50%, 0);
+        transition: all 0.15s ease-in-out;
+    }
+    .menu ul li span:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid rgba(0, 0, 0, 0.5);
+        transform: translateY(-50%);
+    }
+    .menu ul li:hover span {
+        opacity: 1;
+        transform: translate3d(0px, -50%, 0);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        width: 230px;
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
+        transform: translate3d(-230px, 0, 0);
+        transition: all 0.3s ease-in-out;
+    }
+    .menu .smartphone-menu-trigger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 100%;
+        background: #5bc995;
+    }
+    .menu .smartphone-menu-trigger:before,
+    .menu .smartphone-menu-trigger:after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+    .menu .smartphone-menu-trigger:after {
+        top: 55%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+    .menu ul li {
+        padding: 1em 1em 1em 3em;
+        font-size: 1.2em;
+    }
+    .menu:focus {
+        transform: translate3d(0, 0, 0);
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
+    }
+    .menu:focus .smartphone-menu-trigger {
+        pointer-events: none;
+    }
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
+    border-radius: 15px;
+}
+
+@media (max-width: 1199px) {
+    .btnContact {
+        width: 100%;
+        height: 55px;
+    }
+}
+
+.heading {
+    padding: 2rem;
+    .heading-text {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        img {
+            margin-right: 15px;
+        }
+        p {
+            flex: 1;
+        }
+        button {
+            border: 0;
+            background: #00A9EC;
+            color: white;
+            padding: 0.5rem;
+            width: 140px;
+            border-radius: 50px;
+        }
+        &::after {
+            content: "";
+            width: 680px;
+            height: 0px;
+            opacity: 0.5;
+            border: 1px solid #00A9EC;
+        }
+    }
+}
+
+.list {
+    padding-left: 2rem;
+    .list-item {
+        display: flex;
+        padding-bottom: 1.5rem;
+        img {
+            margin-right: 20px;
+        }
+        p {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        p,
+        input {
+            flex: 1;
+        }
+    }
+}
